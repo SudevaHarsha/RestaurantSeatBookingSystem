@@ -21,7 +21,7 @@ export const metadata = {
     siteName: "Your Website Name",
     images: [
       {
-        url: "./public/hero-image.jpg", // Replace with your OG image
+        url: "/hero-image.jpg", // Replace with your OG image
         width: 800,
         height: 600,
         alt: "OG Image",
@@ -34,7 +34,7 @@ export const metadata = {
     card: "summary_large_image", // Type of card to display on Twitter
     site: "@yourtwitterhandle", // Replace with your Twitter handle
     creator: "@yourtwitterhandle", // Replace with your Twitter handle
-    image: "./public/hero-image.jpg", // Same OG image as above
+    image: "/hero-image.jpg", // Same OG image as above
   },
 };
 
@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta property="og:description" content={metadata.openGraph.description} />
