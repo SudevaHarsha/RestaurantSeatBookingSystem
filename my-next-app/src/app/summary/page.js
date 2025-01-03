@@ -1,9 +1,10 @@
 "use client";
 
 import { useSearchParams, useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 
-export default function Summary() {
+// Summary page component
+function SummaryContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -50,5 +51,14 @@ export default function Summary() {
         </button>
       </div>
     </div>
+  );
+}
+
+// Wrapping the Summary page with Suspense
+export default function Summary() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <SummaryContent />
+    </Suspense>
   );
 }
