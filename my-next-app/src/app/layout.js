@@ -17,7 +17,7 @@ export const metadata = {
   openGraph: {
     title: "Deva's Kitchen",
     description: "Extraordinary dishes with world-class quality.",
-    url: "https://www.yourwebsite.com", // Replace with your website URL
+    url: "https://restaurant-seat-booking-system-y99d.vercel.app/", // Replace with your website URL
     siteName: "Your Website Name",
     images: [
       {
